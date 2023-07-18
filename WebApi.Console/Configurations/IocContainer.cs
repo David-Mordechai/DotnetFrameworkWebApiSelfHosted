@@ -27,7 +27,11 @@ public static class IocContainer
 
     private static void RegisterServices(ContainerBuilder builder)
     {
-        builder.Register<ILogger>((_, _) => new LoggerConfiguration().WriteTo.Console().CreateLogger()).SingleInstance();
+        builder.Register<ILogger>((_, _) => new LoggerConfiguration()
+            .WriteTo
+            .Console()
+            .CreateLogger()
+        ).SingleInstance();
         
         builder.RegisterType<MyService>().As<IMyService>().InstancePerRequest();
     }
