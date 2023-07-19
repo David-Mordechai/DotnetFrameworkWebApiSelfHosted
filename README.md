@@ -1,4 +1,4 @@
-# Dotnet framework WebApi selfHosted Templage
+# Dotnet framework WebApi selfHosted Template
 
 Dotnet framework 4.8 console application, implements WebApi self hosted process with dependecy injection and logger.
 
